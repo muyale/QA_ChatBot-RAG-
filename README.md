@@ -1,6 +1,7 @@
 # QA_ChatBot-RAG-
 
-Objective
+# Objective
+
 Use Falcon LLM, Langchain and ChromaDB to create a Retrieval Augmented Generation (RAG) system. This will allow us to ask questions about our documents (that were not included in the training data), without fine-tunning the Large Language Model (LLM). When using RAG, if you are given a question, you first do a retrieval step to fetch any relevant documents from a special database, a vector database where these documents were indexed.
 
 ![image](https://github.com/muyale/QA_ChatBot-RAG-/assets/111242297/7d67e45e-42a8-4863-b233-17eb0426ada2)
@@ -20,9 +21,10 @@ Use Falcon LLM, Langchain and ChromaDB to create a Retrieval Augmented Generatio
 
 
 
-Definitions
+# Definitions
+
 LLM - Large Language Model
-Falcon LL,
+Falcon LLM
 Langchain - a framework designed to simplify the creation of applications using LLMs
 Vector database - a database that organizes data through high-dimmensional vectors
 ChromaDB - vector database
@@ -34,7 +36,8 @@ Version: V1
 Framework: PyTorch
 falcon model is pretrained and fine-tuned with 2 Trillion tokens and 7 to 70 Billion parameters which makes it one of the powerful open source models. It is a highly improvement over LlaMA 1 model.
 
-What is a Retrieval Augmented Generation (RAG) system?
+#  What is a Retrieval Augmented Generation (RAG) system?
+
 Large Language Models (LLMs) has proven their ability to understand context and provide accurate answers to various NLP tasks,
  including summarization, Q&A, when prompted. 
 While being able to provide very good answers to questions about information that they were trained with, they tend to hallucinate when the topic is about information that they do "not know", i.e. was not included in their training data.
@@ -46,7 +49,7 @@ For the generator part, the obvious option is a LLM. In this Notebook we will us
 
 The orchestration of the retriever and generator will be done using Langchain. A specialized function from Langchain allows us to create the receiver-generator in one line of code.
 
-#Retreival Argument Generation
+#  Retreival Argument Generation
 
 ![image](https://github.com/muyale/QA_ChatBot-RAG-/assets/111242297/e5459c28-79a0-4d1b-9b6d-6fa0da885df7)
 
